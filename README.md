@@ -3,7 +3,7 @@
 📂 Semester 1
 
 ○
-[💻 Algorithms and Programming](https://github.com/matei1603/University-Projects)
+[💻 Algorithms and Programming](https://github.com/matei1603/University-Projects/tree/main/Algorithms%20and%20Programming)
 
 📂 Semester 2
 
