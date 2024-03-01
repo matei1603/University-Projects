@@ -1,0 +1,40 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; declare variabile
+    14 00000000 0A                          a db 10
+    15 00000001 0500                        b dw 5
+    16                                      ; fara semn
+    17                                  
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21                                          ; codul care solutioneaza o probl
+    22                                          ;adunare add opd, ops;
+    23                                                                  ;opd = opd+ops
+    24                                                                  ;restrictii:
+    25                                                                  ;1. opd nu poate fi constanta
+    26                                                                  ;2 opd, ops sa fie de aceasi dimensiune(acelasi tip de date)
+    27                                                                  ;3 cel putin un operand sa fie reg sau constanta
+    28                                                                  ; add 3,4 nu se poate
+    29                                                                  ; add 5,al nu se poate
+    30                                          ;e =a+be; a trebuie sa devina word
+    31 00000000 A0[00000000]                    mov al, [a]
+    32                                          ;[]pentru a accesa valoarea unei variabile
+    33                                          ;ax = ah[a]
+    34 00000005 B400                            mov ah,0
+    35                                          ;ax = a
+    36 00000007 660305[01000000]                add ax,[b]; ax= 10+5
+    37                                          
+    38                                          ; exit(0)
+    39 0000000E 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    40 00000010 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
