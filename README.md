@@ -16,7 +16,7 @@
 📂 Semester 3
 
 ○
-[💻 Computer Systems Architecture](https://github.com/matei1603/University-Projects)
+[💻 Computer Systems Architecture](https://github.com/matei1603/University-Projects/tree/main/Computer%20Systems%20Architecture)
 
 ○
 [💻 Advanced Programming Methods](https://github.com/matei1603/University-Projects)
