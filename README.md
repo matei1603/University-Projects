@@ -22,7 +22,7 @@
 [💻 Advanced Programming Methods](https://github.com/matei1603/University-Projects)
 
 ○
-[💻 Databases](https://github.com/matei1603/University-Projects)
+[💻 Databases](https://github.com/matei1603/University-Projects/tree/main/Databases)
 
 ○
 [💻 Public Key Cryptography](https://github.com/matei1603/University-Projects)
