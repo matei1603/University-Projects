@@ -11,7 +11,7 @@
 [💻 Data Structures](https://github.com/matei1603/University-Projects)
 
 ○
-[💻 Object Oriented Programming](https://github.com/matei1603/University-Projects)
+[💻 Object Oriented Programming](https://github.com/matei1603/University-Projects/tree/main/Object%20Oriented%20Programming)
 
 📂 Semester 3
 
