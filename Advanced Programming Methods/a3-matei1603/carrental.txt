@@ -1,0 +1,5 @@
+50,Car: Opel Astra - 2003, car has 320000 km .,domain.Customer@179d3b25
+51,Car: Golf 5 - 2008, car has 150000 km .,domain.Customer@238e0d81
+52,Car: Mercedes S - 2018, car has 20000 km .,domain.Customer@31221be2
+53,Car: BMW X6 - 2023, car has 10000 km .,domain.Customer@377dca04
+54,Car: Dacia Logan - 2016, car has 35000 km .,domain.Customer@728938a9
