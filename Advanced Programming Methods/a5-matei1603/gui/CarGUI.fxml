@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="446.0" prefWidth="367.0">
+         <children>
+            <HBox prefHeight="21.0" prefWidth="364.0">
+               <children>
+                  <Label text="Cars" />
+               </children>
+            </HBox>
+            <ListView fx:id="viewcars" prefHeight="196.0" prefWidth="364.0" />
+            <HBox prefHeight="0.0" prefWidth="364.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="49.0" text="CarId" />
+                  <TextField fx:id="carid1" prefHeight="26.0" prefWidth="160.0" />
+                  <Button fx:id="addcar" mnemonicParsing="false" onMouseClicked="#addCarClick" prefHeight="26.0" prefWidth="86.0" text="ADD" />
+                  <Button fx:id="removecar" mnemonicParsing="false" onMouseClicked="#removeCarClick" prefHeight="26.0" prefWidth="74.0" text="REMOVE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="14.0" prefWidth="364.0">
+               <children>
+                  <Label text="CarName" />
+                  <TextField fx:id="carname1" prefHeight="26.0" prefWidth="159.0" />
+                  <Button fx:id="updatecar" mnemonicParsing="false" onMouseClicked="#updateCarClick" prefHeight="26.0" prefWidth="81.0" text="UPDATE" />
+                  <Button fx:id="kmgreater" mnemonicParsing="false" onMouseClicked="#getKmGreaterClick" prefHeight="26.0" prefWidth="74.0" text="KMGREATER" />
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="364.0">
+               <children>
+                  <Label text="FabYear  " />
+                  <TextField fx:id="fabricationyear1" prefHeight="26.0" prefWidth="160.0" />
+                  <Button fx:id="carolder" mnemonicParsing="false" onMouseClicked="#getCarOlderClick" prefHeight="26.0" prefWidth="82.0" text="CAROLDER" />
+                  <Button fx:id="filname" mnemonicParsing="false" onMouseClicked="#getFiltredNameClick" prefHeight="26.0" prefWidth="74.0" text="FILNAME" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="364.0">
+               <children>
+                  <Label text="Km          " />
+                  <TextField fx:id="km1" prefHeight="26.0" prefWidth="158.0" />
+                  <Button fx:id="idrange" mnemonicParsing="false" onMouseClicked="#getCarinIdRangeClick" prefHeight="26.0" prefWidth="81.0" text="IDRANGE" />
+                  <Button fx:id="newmillow" mnemonicParsing="false" onMouseClicked="#getCarNewerwithMilLowerClick" prefHeight="26.0" prefWidth="74.0" text="NEW/MILLOW" />
+               </children>
+            </HBox>
+            <HBox prefHeight="14.0" prefWidth="364.0">
+               <children>
+                  <Label text="Filtered:" />
+               </children>
+            </HBox>
+            <HBox prefHeight="183.0" prefWidth="364.0">
+               <children>
+                  <ListView fx:id="filtredcars" prefHeight="183.0" prefWidth="368.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="522.0" prefWidth="362.0">
+         <children>
+            <HBox prefHeight="22.0" prefWidth="359.0">
+               <children>
+                  <Label text="CarRentals" />
+               </children>
+            </HBox>
+            <ListView fx:id="viewcarrentals" prefHeight="196.0" prefWidth="359.0" />
+            <HBox prefHeight="21.0" prefWidth="359.0">
+               <children>
+                  <Label text="CarId      " />
+                  <TextField fx:id="carid2" prefHeight="26.0" prefWidth="145.0" />
+                  <Button fx:id="addrental" mnemonicParsing="false" onMouseClicked="#addRentalClick" prefHeight="26.0" prefWidth="66.0" text="ADD" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="359.0">
+               <children>
+                  <Label text="CarName" />
+                  <TextField fx:id="carname2" prefHeight="26.0" prefWidth="145.0" />
+                  <Button fx:id="removerental" mnemonicParsing="false" onMouseClicked="#removeRentalClick" prefHeight="26.0" prefWidth="66.0" text="REMOVE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="359.0">
+               <children>
+                  <Label text="FabYear  " />
+                  <TextField fx:id="fabricationyear2" />
+                  <Button fx:id="updaterental" mnemonicParsing="false" onMouseClicked="#updateCarRentalClick" prefHeight="26.0" prefWidth="65.0" text="UPDATE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="359.0">
+               <children>
+                  <Label text=" Km         " />
+                  <TextField fx:id="km2" prefHeight="26.0" prefWidth="149.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="359.0">
+               <children>
+                  <Label text="CSId        " />
+                  <TextField fx:id="customerid" prefHeight="26.0" prefWidth="149.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="359.0">
+               <children>
+                  <Label text="CSName " />
+                  <TextField fx:id="customername" prefHeight="26.0" prefWidth="151.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="359.0">
+               <children>
+                  <Label text="Age        " />
+                  <TextField fx:id="customerage" prefHeight="26.0" prefWidth="152.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="359.0">
+               <children>
+                  <Label text="ID           " />
+                  <TextField fx:id="rentalid" prefHeight="26.0" prefWidth="152.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
