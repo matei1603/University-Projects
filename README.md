@@ -19,10 +19,7 @@
 [💻 Computer Systems Architecture](https://github.com/matei1603/University-Projects/tree/main/Computer%20Systems%20Architecture)
 
 ○
-[💻 Advanced Programming Methods](https://github.com/matei1603/University-Projects)
+[💻 Advanced Programming Methods](https://github.com/matei1603/University-Projects/tree/main/Advanced%20Programming%20Methods)
 
 ○
 [💻 Databases](https://github.com/matei1603/University-Projects/tree/main/Databases)
-
-○
-[💻 Public Key Cryptography](https://github.com/matei1603/University-Projects)
